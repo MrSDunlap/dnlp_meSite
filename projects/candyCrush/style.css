@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid {
+  height: 560px;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid div {
+  height: 70px;
+  aspect-ratio: 1/1;
+}

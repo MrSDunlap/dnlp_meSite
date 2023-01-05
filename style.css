@@ -278,6 +278,7 @@ section {
 .a-skills {
   font-size: 3rem;
   font-weight: bold;
+  padding-bottom: 2rem;
 }
 .skill-list {
   display: flex;
@@ -286,6 +287,7 @@ section {
 }
 .skill-list li {
   font-size: 1.6rem;
+  font-weight: 500;
   padding: 0.5rem 1.5rem;
   background-color: var(--grey);
   border-radius: 1rem;
@@ -309,6 +311,11 @@ section {
   justify-content: center;
   align-items: center;
 }
+.gradient {
+  position: relative;
+  z-index: 10;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
 .projects-container {
   display: grid;
   max-width: 1200px;
@@ -322,33 +329,68 @@ section {
   border-radius: 1rem;
   cursor: pointer;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fff;
   grid-column: span 3;
   font-size: 1.2rem;
   padding: 2rem;
-  box-shadow: 0.5rem 0.5rem 0 #333;
-  border: 3px solid #333;
-  gap: 1rem;
+  gap: 2.5rem;
+}
+.card-title {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 .project-desc {
   line-height: 1.8rem;
+  font-size: 1.4rem;
+  color: white;
   display: none;
 }
-
+.case-study {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--off-black);
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--grey);
+  border: none;
+  transition: all 150ms ease-in-out;
+  display: none;
+}
+.case-study:hover {
+  background-color: var(--purple);
+  cursor: pointer;
+  color: var(--grey);
+}
 .card.active .project-desc {
   display: block;
+}
+.card.active .case-study {
+  display: block;
+}
+.card.active .card-title {
+  padding-bottom: 1rem;
 }
 .card.active {
   grid-column: 1 / span 6;
   grid-row: 1;
   order: 0;
-  height: auto;
+  cursor: auto;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 30rem;
 }
 .card.is-inactive {
   grid-column: span 2;
+}
+
+/* project Matrix rain  */
+.matrix-rain {
+  background-image: url(./assets/images/matrix-rain.JPG);
+  background-size: cover;
 }
 
 /* Background element */
