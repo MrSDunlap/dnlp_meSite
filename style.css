@@ -415,8 +415,6 @@ section {
 .modal {
   display: none;
   position: fixed;
-  display: flex;
-  justify-content: center;
   z-index: 150;
   top: 0;
   left: 0;

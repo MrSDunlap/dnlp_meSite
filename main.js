@@ -25,3 +25,13 @@ cards.forEach((card, index) => {
     });
   });
 });
+
+// MODAL ----------------------------------------------
+
+// open modal
+const caseStudy = document.querySelector(".case-study");
+const modal = document.querySelector(".modal");
+
+caseStudy.addEventListener("click", () => {
+  modal.classList.add("visible");
+});
