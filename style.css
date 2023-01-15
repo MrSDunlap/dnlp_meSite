@@ -38,7 +38,6 @@ body {
 
 /* ===== Navigation ===== */
 nav {
-  z-index: 100;
   position: fixed;
   width: calc(100% - 100px);
   max-width: 1600px;
@@ -46,6 +45,9 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 5rem 0;
+}
+.top {
+  z-index: 100;
 }
 nav.back {
   z-index: 1;
@@ -372,6 +374,7 @@ section {
   display: none;
 }
 .case-study {
+  z-index: 100;
   font-size: 1.4rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -419,7 +422,6 @@ section {
   height: 3rem;
 }
 .modal {
-  /* display: none; */
   position: fixed;
   z-index: 150;
   top: 0;
@@ -467,8 +469,8 @@ section {
 .line-two {
   transform: rotate(45deg);
 }
-.modal.visable {
-  display: block;
+.visable {
+  display: none;
 }
 
 /* project Matrix rain  */

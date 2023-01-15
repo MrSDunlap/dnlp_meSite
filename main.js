@@ -31,7 +31,11 @@ cards.forEach((card, index) => {
 // open modal
 const caseStudy = document.querySelector(".case-study");
 const modal = document.querySelector(".modal");
+const modalClose = document.querySelector(".modal-close");
+const nav = document.querySelector("nav");
 
 caseStudy.addEventListener("click", () => {
-  modal.classList.add("visible");
+  nav.classList.toggle("top");
+  modal.classList.toggle("visible");
+  console.log("button has been clicked");
 });
