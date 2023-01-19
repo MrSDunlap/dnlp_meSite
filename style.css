@@ -307,6 +307,7 @@ section {
   font-size: 15rem;
   font-weight: 900;
   color: var(--off-black);
+
   opacity: 0.2;
 }
 
@@ -471,8 +472,8 @@ section {
 .line-two {
   transform: rotate(45deg);
 }
-.modal.visable {
-  display: none;
+.visable {
+  display: block;
 }
 
 /* project Matrix rain  */
