@@ -39,3 +39,17 @@ caseStudy.addEventListener("click", () => {
   modal.classList.toggle("visible");
   console.log("button has been clicked");
 });
+
+// Nav ____________________________________________
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach((navLink, index) => {
+  navLink.addEventListener("click", () => {
+    const navActive = navLink.classList.contains("active-link");
+
+    navLinks.forEach((otherNavLink, otherIdx) => {
+      otherNavLink.classList.remove("active-link");
+      if (!navActive) navLink.classList.add("active-link");
+    });
+  });
+});
