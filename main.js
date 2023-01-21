@@ -1,3 +1,17 @@
+// Navbar hide and show on scroll
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav").style.top = "0";
+    document.querySelector(".nav-background").style.top = "0";
+  } else {
+    document.getElementById("nav").style.top = "-111px";
+    document.querySelector(".nav-background").style.top = "-115px";
+  }
+  prevScrollpos = currentScrollPos;
+};
+
 gsap.registerPlugin(Flip);
 const cards = document.querySelectorAll(".card");
 
